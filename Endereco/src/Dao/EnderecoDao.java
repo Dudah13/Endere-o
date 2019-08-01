@@ -58,7 +58,7 @@ public class EnderecoDao {
         }
     }
     public static boolean excluir(Endereco objeto) {
-        String sql = "DELETE FROM produto WHERE codigo=?";
+        String sql = "DELETE FROM endereco WHERE codigo=?";
         try {
             PreparedStatement ps = conexao.Conexao.getConexao().prepareStatement(sql);
             ps.setInt(1, objeto.getCodigo());
