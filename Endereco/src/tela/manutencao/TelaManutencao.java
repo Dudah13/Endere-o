@@ -36,11 +36,11 @@ public class TelaManutencao extends javax.swing.JDialog {
         bntAdiconar = new javax.swing.JButton();
         jtfLogradouro = new javax.swing.JTextField();
         jtfComplemento = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnAlterar = new javax.swing.JButton();
+        btnExcluir = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jtfCodigo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -63,17 +63,17 @@ public class TelaManutencao extends javax.swing.JDialog {
             }
         });
 
-        jButton1.setText("Alterar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAlterar.setText("Alterar");
+        btnAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAlterarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Excluir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnExcluir.setText("Excluir");
+        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnExcluirActionPerformed(evt);
             }
         });
 
@@ -95,9 +95,9 @@ public class TelaManutencao extends javax.swing.JDialog {
                         .addContainerGap()
                         .addComponent(bntAdiconar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1)
+                        .addComponent(btnAlterar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(btnExcluir)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3))
                     .addGroup(layout.createSequentialGroup()
@@ -106,7 +106,7 @@ public class TelaManutencao extends javax.swing.JDialog {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1)
+                                .addComponent(jtfCodigo)
                                 .addGap(3, 3, 3))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
@@ -142,12 +142,12 @@ public class TelaManutencao extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bntAdiconar)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
+                    .addComponent(btnAlterar)
+                    .addComponent(btnExcluir)
                     .addComponent(jButton3))
                 .addGap(22, 22, 22))
         );
@@ -159,13 +159,13 @@ public class TelaManutencao extends javax.swing.JDialog {
     controlador.ControladorEndereco.inserir(this);       // TODO add your handling code here:
     }//GEN-LAST:event_bntAdiconarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    controlador.ControladorProduto.alterar(this);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
+    controlador.ControladorEndereco.alterar(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAlterarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    controlador.ControladorProduto.excluir(this);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
+    controlador.ControladorEndereco.excluir(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExcluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,16 +211,16 @@ public class TelaManutencao extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton bntAdiconar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton btnAlterar;
+    public javax.swing.JButton btnExcluir;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
     public javax.swing.JTextField jtfBairro;
+    public javax.swing.JTextField jtfCodigo;
     public javax.swing.JTextField jtfComplemento;
     public javax.swing.JTextField jtfLogradouro;
     // End of variables declaration//GEN-END:variables
