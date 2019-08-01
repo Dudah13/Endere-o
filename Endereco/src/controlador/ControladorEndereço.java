@@ -28,7 +28,7 @@ public class ControladorEndereco {
         }
 }
 
-    public static void alterar(ControladorEndereco man){
+    public static void alterar(TelaManutencao man){
         Endereco objeto = new Endereco();
         //definir todos os atributos
         objeto.setCodigo(Integer.parseInt(man.jtfCodigo.getText()));
@@ -43,7 +43,7 @@ public class ControladorEndereco {
         }
     }
     
-    public static void excluir(ControladorEndereco man){
+    public static void excluir(TelaManutencao man){
         Endereco objeto = new Endereco();
         objeto.setCodigo(Integer.parseInt(man.jtfCodigo.getText())); //só precisa definir a chave primeira
         
